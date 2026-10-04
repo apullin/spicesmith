@@ -1,0 +1,7 @@
+{
+  "check": "exact:",
+  "expect": "pass",
+  "finding": "",
+  "origin": "Self-contained RC fixture",
+  "notes": "A portable smoke fixture for explicitly selected reference and candidate binaries."
+}

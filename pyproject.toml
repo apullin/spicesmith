@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spicesmith"
+version = "0.1.0"
+description = "Reproducible random-circuit generation for SPICE, PD and layout tools: Csmith, for netlists"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+dev = ["pytest>=7", "ruff", "mypy"]
+
+[project.scripts]
+spicesmith = "spicesmith.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["spicesmith*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "simulator: runs the real reference and candidate binaries (CPU only, short decks)",
+]
+addopts = "-m 'not simulator'"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B"]
+
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true

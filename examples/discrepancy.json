@@ -1,0 +1,8 @@
+{
+  "kind": "difference",
+  "configuration": "approx",
+  "baseline": "ref",
+  "threshold": 0.001,
+  "relative": 0.01,
+  "minimum_transistors": 4
+}

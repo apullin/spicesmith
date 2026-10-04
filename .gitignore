@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+build/
+dist/
+# batch output and scratch runs
+/runs/
+/scratch/
+# Retired guidance must not be reintroduced into the tracked project.
+/SPEC.md

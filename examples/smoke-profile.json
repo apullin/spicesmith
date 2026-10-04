@@ -1,0 +1,9 @@
+{
+  "weights": {"gain": 1},
+  "disposition": "mixed",
+  "motifs": 2,
+  "depth": 2,
+  "time_scale_spread": 1,
+  "tstop": 1e-7,
+  "maxstep": 1e-9
+}

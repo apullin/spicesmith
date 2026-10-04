@@ -1,0 +1,13 @@
+{
+  "strata": [
+    {"name": "biased-gain", "profile": {"name": "heterogeneous-continuous", "weights": {"bias": 1, "gain": 3}}, "quota": 2},
+    {"name": "feedback", "profile": "coupled-feedback", "quota": 2},
+    {"name": "passive", "profile": "irregular-passive", "quota": 2},
+    {"name": "small-excursion", "profile": "nonlinear-small", "quota": 2},
+    {"name": "large-excursion", "profile": "nonlinear-large", "quota": 2},
+    {"name": "recovery", "profile": "nonlinear-recovery", "quota": 2},
+    {"name": "switching-disturbance", "profile": "switching-disturbance", "quota": 2},
+    {"name": "synchronized-analog", "profile": "repeated-analog", "quota": 2},
+    {"name": "independent-analog", "profile": {"name": "repeated-analog", "source_correlation": 0}, "quota": 2}
+  ]
+}

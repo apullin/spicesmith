@@ -1,0 +1,5 @@
+{
+  "absolute": 0.001,
+  "relative": 0.01,
+  "floor": 1e-12
+}

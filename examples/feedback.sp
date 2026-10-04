@@ -1,0 +1,61 @@
+spicesmith structural generator 1 seed 17
+.param vsupply=1.2
+.option reltol=1e-3 abstol=1e-13 vntol=1e-6 method=trap
+.model n nmos level=54 version=4.8
+.model p pmos level=54 version=4.8
+.model diode d is=1e-14 n=1.05 rs=2 cjo=5f
+Vd0 n3 0 1.2
+Rd1 n3 n1 0.5
+Rd2 n2 0 0.1
+Cd3 n1 n2 1e-10
+Rd4 n1 n4 0.5
+Rd5 n5 n2 0.1
+Cd6 n4 n5 1e-10
+Vd7 n6 n5 SIN(0.6 0.05 11347427.9796 0 0 257.131856649)
+Rd8 n6 n7 1210.41471896
+Ed9 n9 n5 n7 n8 5.72102991409
+Rd10 n9 n10 1151.07091324
+Cd11 n10 n5 1.83433807914e-12
+Ed12 n11 n5 n10 n5 3.88244277479
+Rd13 n11 n12 3149.19051112
+Cd14 n12 n5 7.50154921321e-13
+Ed15 n13 n5 n12 n5 8.64980037889
+Rd16 n13 n14 2938.05456887
+Cd17 n14 n5 2.21842537794e-12
+Rd18 n8 n5 10000
+Rd19 n14 n8 20000
+Cd20 n14 n7 2.45439741268e-12
+Rd21 n14 n5 213154.245905
+Vd22 n15 n5 SIN(0.6 0.05 3110832.69009 0 0 121.791600943)
+Rd23 n15 n16 398.401201709
+Rd24 n14 n16 10000
+Ed25 n18 n5 n16 n17 5.78700568589
+Rd26 n18 n19 1077.75199439
+Cd27 n19 n5 4.33779784619e-13
+Rd28 n17 n5 10000
+Rd29 n19 n17 20000
+Cd30 n19 n16 9.85605123464e-13
+Rd31 n19 n5 171614.80738
+Rd32 n1 0 1e+12
+Rd33 n2 0 1e+12
+Rd34 n3 0 1e+12
+Rd35 n4 0 1e+12
+Rd36 n5 0 1e+12
+Rd37 n6 0 1e+12
+Rd38 n7 0 1e+12
+Rd39 n8 0 1e+12
+Rd40 n9 0 1e+12
+Rd41 n10 0 1e+12
+Rd42 n11 0 1e+12
+Rd43 n12 0 1e+12
+Rd44 n13 0 1e+12
+Rd45 n14 0 1e+12
+Rd46 n15 0 1e+12
+Rd47 n16 0 1e+12
+Rd48 n17 0 1e+12
+Rd49 n18 0 1e+12
+Rd50 n19 0 1e+12
+.tran 2e-09 1e-06 0 2e-09
+* spicesmith-output waveform.txt v(n1) v(n2) v(n14) v(n19)
+.save v(n1) v(n2) v(n14) v(n19)
+.end

@@ -1,0 +1,12 @@
+{
+  "target_transistors": 23000,
+  "topology_reuse": 0.1,
+  "parameter_reuse": 0.0,
+  "source_correlation": 0.1,
+  "coupling": 0.9,
+  "interconnect": "mesh",
+  "fanout": 3,
+  "region_size": 32,
+  "max_observed": 48,
+  "model_family": "bsim4"
+}

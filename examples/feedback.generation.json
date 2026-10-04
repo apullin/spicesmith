@@ -1,0 +1,126 @@
+{
+  "generator": "structural-1",
+  "seed": 17,
+  "profile": {
+    "name": "coupled-feedback",
+    "weights": {
+      "feedback": 1.0
+    },
+    "disposition": "analog",
+    "motifs": 2,
+    "target_transistors": 0,
+    "depth": 3,
+    "topology_reuse": 0.1,
+    "parameter_reuse": 0.0,
+    "diversity": 1.0,
+    "coupling": 1.0,
+    "interconnect": "mesh",
+    "fanout": 2,
+    "region_size": 32,
+    "source_correlation": 0.0,
+    "vdd": 1.2,
+    "bias_current": 2e-05,
+    "common_mode": 0.6,
+    "amplitude": 0.05,
+    "excursion": "small",
+    "loading": 10000.0,
+    "feedback": 0.5,
+    "feedback_polarity": -1,
+    "compensation": 1e-12,
+    "nominal_q": 3.0,
+    "time_scale_spread": 2.0,
+    "tstop": 1e-06,
+    "maxstep": 2e-09,
+    "supply_impedance": 0.5,
+    "return_impedance": 0.1,
+    "conditioning": true,
+    "shunt": 1000000000000.0,
+    "model_family": "bsim4",
+    "max_devices": 200000,
+    "max_nets": 150000,
+    "max_motifs": 12000,
+    "max_observed": 48,
+    "max_requested_points": 100000,
+    "max_attempts": 4,
+    "version": 1
+  },
+  "circuit_sha256": "8b1c2ad9660d2f94020de4a1afbcc63285a939a58c2ab85b66b4ed08945eee06",
+  "attempts": [
+    {
+      "attempt": 0,
+      "state": "accepted"
+    }
+  ],
+  "structure": {
+    "devices": 51,
+    "transistors": 0,
+    "nets": 20,
+    "families": {
+      "V": 3,
+      "R": 36,
+      "C": 8,
+      "E": 4
+    },
+    "motifs": {
+      "feedback": 2
+    },
+    "roles": {
+      "supply": 1,
+      "shared-supply": 1,
+      "shared-return": 1,
+      "decoupling": 2,
+      "regional-supply": 1,
+      "regional-return": 1,
+      "excitation": 2,
+      "source-impedance": 2,
+      "gain-scaffold": 4,
+      "interstage": 4,
+      "compensation": 6,
+      "feedback-divider": 2,
+      "feedback": 2,
+      "terminal-load": 2,
+      "coupling": 1,
+      "conditioning": 19
+    },
+    "connected_components": 1,
+    "degree_histogram": {
+      "3": 8,
+      "4": 7,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "17": 1,
+      "21": 1
+    },
+    "parameter_ranges": {
+      "R": {
+        "minimum": 0.1,
+        "maximum": 1000000000000.0
+      },
+      "C": {
+        "minimum": 4.3377978461875456e-13,
+        "maximum": 1e-10
+      }
+    },
+    "distinct_shapes": 2,
+    "distinct_parameter_sets": 2,
+    "distinct_topology_draws": 2,
+    "distinct_parameter_draws": 2,
+    "distinct_source_draws": 2,
+    "hierarchy": {
+      "representation": "flat devices with motif/region ownership",
+      "regions": 1
+    },
+    "observation_scope": {
+      "observed_nets": 4,
+      "total_non_ground_nets": 19,
+      "unobserved_nets": 15
+    },
+    "intended_regimes": {
+      "small": 2
+    },
+    "model_family": "bsim4",
+    "controlled_source_scaffolds": 2
+  },
+  "parents": []
+}
